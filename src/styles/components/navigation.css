@@ -1,0 +1,84 @@
+.navigation {
+  font-size: 14px;
+  letter-spacing: -.108px;
+  color: hsl(var(--color-black));
+}
+
+.navigation__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__link {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  outline: none;
+}
+
+.navigation__link:focus {
+  color: hsl(var(--color-black));
+}
+
+@media (max-width: 767px) {
+
+  .navigation {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    inset-inline: 0;
+    display: none;
+    padding: 24px;
+    font-size: 18px;
+    letter-spacing: -.138px;
+    background-image: var(--gradient-basic);
+  }
+
+  .navigation--open {
+    display: block;
+  }
+
+  .navigation__list {
+    padding: 20px;
+    background-color: var(--color-white-light);
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .navigation {
+    position: relative;
+    color: var(--color-gray-dark);
+  }
+
+  .navigation__list {
+    grid-template-columns: repeat(5, min-content);
+    margin-left: 24px;
+  }
+
+  .navigation__link {
+    padding: 32px 16px;
+  }
+
+  .navigation__highlight {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: var(--color-lime);
+    background-image: var(--gradient-fancy);
+    transition: all 0.2s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .navigation__link:hover {
+    color: hsl(var(--color-black));
+  }
+}

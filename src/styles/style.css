@@ -1,7 +1,11 @@
 @import './fonts.css';
 
 @import './components/box-sizing.css';
+@import './components/button.css';
+@import './components/navigation.css';
+
 @import './components/page.css';
+@import './components/header.css';
 
 :root {
   --color-white-light: hsl(0, 0%, 100%);
@@ -15,5 +19,5 @@
   --color-black: 231, 26%, 24%;
 
   --gradient-basic: linear-gradient(180deg, hsl(var(--color-black)) 0, hsla(var(--color-black), 0) 100%);
-  --gradient-fancy: linear-gradient(135deg, hsl(var(--color-lime)) 0, hsl(var(--color-cyan)) 99.58%);
+  --gradient-fancy: linear-gradient(135deg, var(--color-lime) 0, var(--color-cyan) 99.58%);
 }
