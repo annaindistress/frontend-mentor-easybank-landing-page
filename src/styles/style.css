@@ -1,0 +1,19 @@
+@import './fonts.css';
+
+@import './components/box-sizing.css';
+@import './components/page.css';
+
+:root {
+  --color-white-light: hsl(0, 0%, 100%);
+  --color-white-dark: hsl(0, 0%, 98%);
+  --color-gray-light: hsl(223, 18%, 96%);
+  --color-gray-dark: hsl(231, 8%, 61%);
+  --color-green: hsl(158, 61%, 49%);
+  --color-lime: hsl(136, 64%, 51%);
+  --color-cyan: hsl(192, 69%, 51%);
+
+  --color-black: 231, 26%, 24%;
+
+  --gradient-basic: linear-gradient(180deg, hsl(var(--color-black)) 0, hsla(var(--color-black), 0) 100%);
+  --gradient-fancy: linear-gradient(135deg, hsl(var(--color-lime)) 0, hsl(var(--color-cyan)) 99.58%);
+}
