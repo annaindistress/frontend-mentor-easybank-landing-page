@@ -1,0 +1,134 @@
+.footer {
+  padding: 40px 24px;
+  background-color: hsl(var(--color-black));
+}
+
+.footer__container {
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.footer__logo-link {
+  width: 139px;
+  height: 20px;
+  margin-inline: auto;
+}
+
+.footer__logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer__social {
+  min-width: 200px;
+}
+
+.footer__navigation {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__link {
+  display: block;
+  letter-spacing: -.234px;
+  line-height: 1.73;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  outline: none;
+}
+
+.footer__link:focus {
+  color: var(--color-green);
+}
+
+.footer__request-button {
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.footer__copyright {
+  margin: 0;
+  letter-spacing: -.234px;
+  line-height: 1.73;
+  color: hsla(var(--color-white), .5);
+}
+
+@media (min-width: 768px) {
+
+  .footer__social {
+    min-width: 170px;
+  }
+
+  .footer__navigation {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 160px);
+    gap: 4px 30px;
+  }
+
+  .footer__link {
+    display: block;
+    letter-spacing: -.234px;
+    line-height: 1.73;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .footer {
+    padding: 48px 0;
+  }
+
+  .footer__container {
+    grid-template-columns: 170px 1fr max-content;
+    gap: 24px 115px;
+    max-width: 1110px;
+    margin-inline: auto;
+    text-align: left;
+  }
+
+  .footer__logo-link {
+    grid-column: 1 / 2;
+    margin-inline: 0;
+  }
+
+  .footer__social {
+    grid-column: 1 / 2;
+    margin-left: -14px;
+  }
+
+  .footer__navigation {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
+    margin-bottom: 0;
+  }
+
+  .footer__request-button {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-right: 0;
+  }
+
+  .footer__copyright {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .footer__link:hover {
+    color: var(--color-green);
+  }
+}

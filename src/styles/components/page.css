@@ -8,3 +8,7 @@
   color: var(--color-gray-dark);
   background-color: var(--color-white-dark);
 }
+
+.page--no-overflow {
+  overflow: hidden;
+}

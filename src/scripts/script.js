@@ -1,12 +1,14 @@
 'use strict';
 
 const toggleButton = document.querySelector('.header__toggle-menu');
+const pageElement = document.querySelector('.page');
 const navigationElement = document.querySelector('.navigation');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 
 function toggleMobileMenu() {
   toggleButton.classList.toggle('header__toggle-menu--open');
   navigationElement.classList.toggle('navigation--open');
+  pageElement.classList.toggle('page--no-overflow');
 }
 
 function highlightLink() {

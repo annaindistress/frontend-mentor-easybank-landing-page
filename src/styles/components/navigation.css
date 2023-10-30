@@ -17,11 +17,14 @@
   text-decoration: none;
   text-align: center;
   color: inherit;
-  outline: none;
 }
 
 .navigation__link:focus {
   color: hsl(var(--color-black));
+}
+
+.navigation__link:focus-visible {
+  outline-color: var(--color-green);
 }
 
 @media (max-width: 767px) {
@@ -30,6 +33,7 @@
     position: fixed;
     top: 64px;
     bottom: 0;
+    z-index: 1;
     inset-inline: 0;
     display: none;
     padding: 24px;
@@ -44,7 +48,7 @@
 
   .navigation__list {
     padding: 20px;
-    background-color: var(--color-white-light);
+    background-color: hsl(var(--color-white));
     border-radius: 4px;
   }
 }
@@ -63,6 +67,7 @@
 
   .navigation__link {
     padding: 32px 16px;
+    outline: none;
   }
 
   .navigation__highlight {
