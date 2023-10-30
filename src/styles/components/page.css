@@ -12,3 +12,14 @@
 .page--no-overflow {
   overflow: hidden;
 }
+
+.page__main {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+  .page {
+    font-size: 18px;
+  }
+}
