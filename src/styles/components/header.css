@@ -1,6 +1,6 @@
 .header {
   padding: 11px 24px;
-  background-color: hsl(var(--color-white));
+  background-color: hsl(var(--color-white), 100%);
 }
 
 .header__container {

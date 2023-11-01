@@ -48,7 +48,7 @@
 
   .navigation__list {
     padding: 20px;
-    background-color: hsl(var(--color-white));
+    background-color: hsl(var(--color-white), 100%);
     border-radius: 4px;
   }
 }

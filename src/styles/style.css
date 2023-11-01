@@ -1,26 +1,24 @@
 @import './fonts.css';
-
 @import './components/box-sizing.css';
 @import './components/sr-only.css';
 @import './components/button.css';
 @import './components/navigation.css';
 @import './components/social.css';
-
 @import './components/page.css';
 @import './components/header.css';
 @import './components/hero.css';
 @import './components/features.css';
+@import './components/articles.css';
 @import './components/footer.css';
 
 :root {
-  --color-white-dark: hsl(0, 0%, 98%);
   --color-gray-light: hsl(223, 18%, 96%);
   --color-gray-dark: hsl(231, 8%, 61%);
   --color-green: hsl(158, 61%, 49%);
   --color-lime: hsl(136, 64%, 51%);
   --color-cyan: hsl(192, 69%, 51%);
 
-  --color-white: 0, 0%, 100%;
+  --color-white: 0, 0%;
   --color-black: 231, 26%, 24%;
 
   --gradient-basic: linear-gradient(180deg, hsl(var(--color-black)) 0, hsla(var(--color-black), 0) 100%);

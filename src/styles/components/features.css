@@ -1,6 +1,7 @@
 .features {
   padding-block: 64px;
   text-align: center;
+  background-color: hsl(var(--color-white), 96%);
 }
 
 .features__container {
@@ -11,7 +12,7 @@
 
 .features__title {
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   font-weight: 300;
   font-size: 32px;
   letter-spacing: -.571px;
@@ -36,7 +37,7 @@
 }
 
 .features__icon {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   background-image: var(--gradient-fancy);
   border-radius: 50%;
 }
@@ -96,7 +97,8 @@
 @media (min-width: 1200px) {
 
   .features {
-    padding-block: 96px;
+    padding-top: 96px;
+    padding-bottom: 101px;
     text-align: left;
   }
 

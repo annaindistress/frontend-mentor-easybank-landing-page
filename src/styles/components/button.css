@@ -7,7 +7,7 @@
   line-height: 2;
   text-decoration: none;
   text-transform: capitalize;
-  color: hsl(var(--color-white));
+  color: hsl(var(--color-white), 100%);
   background-color: var(--color-lime);
   background-image: var(--gradient-fancy);
   border-radius: 22px;
@@ -22,12 +22,12 @@
 }
 
 .button:focus::after {
-  background-color: hsla(var(--color-white), .4);
+  background-color: hsla(var(--color-white), 100%, .4);
 }
 
 @media (hover: hover) and (pointer: fine) {
 
   .button:hover::after {
-    background-color: hsla(var(--color-white), .4);
+    background-color: hsla(var(--color-white), 100%, .4);
   }
 }

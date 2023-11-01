@@ -1,0 +1,134 @@
+.articles {
+  padding: 88px 24px;
+  background-color: var(--color-white-dark);
+}
+
+.articles__container {
+  max-width: 1110px;
+  margin-inline: auto;
+}
+
+.articles__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -.571px;
+  text-transform: capitalize;
+  text-align: center;
+  color: hsl(var(--color-black));
+}
+
+.articles__list {
+  display: grid;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.articles__item {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, min-content) 1fr;
+  min-height: 395px;
+  background-color: hsl(var(--color-white), 100%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.articles__subtitle {
+  margin: 0 31px 8px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -.286px;
+}
+
+.articles__link {
+  text-decoration: none;
+  color: hsl(var(--color-black));
+  outline: none;
+}
+
+.articles__link:focus {
+  color: var(--color-green);
+}
+
+.articles__link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.articles__author {
+  order: -1;
+  margin: 0 31px 8px;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: -.156px;
+}
+
+.articles__text {
+  margin: 0 31px 24px;
+  font-size: 13px;
+  line-height: 1.38;
+  letter-spacing: -.203px;
+}
+
+.articles__text::after {
+  content: ' …'
+}
+
+.articles__image {
+  order: -2;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 26px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+
+  .articles__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 1.6;
+    letter-spacing: -.714px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .articles {
+    padding-block: 80px;
+  }
+
+  .articles__title {
+    text-align: left;
+  }
+
+  .articles__list {
+    grid-template-columns: repeat(auto-fit, 255px);
+    gap: 30px;
+  }
+
+  .articles__subtitle {
+    margin-inline: 24px;
+  }
+
+  .articles__author {
+    margin-inline: 24px;
+  }
+
+  .articles__text {
+    margin-inline: 24px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .articles__link:hover {
+    color: var(--color-green);
+  }
+}
